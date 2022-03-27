@@ -4,6 +4,10 @@
 #
 # Copyright (c) 2020 Nyr. Released under the MIT License.
 
+#install updates and packages
+apt-get update
+apt-get upgrade -y
+apt-get install -y iptables-persistent
 
 # Detect Debian users running the script with "sh" instead of bash
 if readlink /proc/$$/exe | grep -q "dash"; then
